@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="theme-color" content="#cfeeff">
+    <title>A Little Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+    <div class="bg">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+    <div class="stars"><span style="left:8%;top:15%">✦</span><span
+            style="left:88%;top:18%;animation-delay:1s">✧</span><span
+            style="left:15%;top:78%;animation-delay:1.8s">✦</span><span
+            style="left:90%;top:76%;animation-delay:.5s">⋆</span></div>
+    <nav class="topnav"><a class="active" href="index.html">🎁 Surprise</a><a href="birthday.html">🎂 Birthday</a><a
+            href="memories.html">💕 Memories</a></nav>
+    <main class="page">
+        <div class="wrap">
+            <span class="pill">A tiny birthday adventure</span>
+            <div class="characters">
+
+                <div class="character penguin">
+                    <img src="Syls1.jpg" alt="Her photo">
+                </div>
+                <div class="character penguin">
+                    <img src="Syls2.jpg" alt="Her photo">
+                </div>
+                <div class="character penguin">
+                    <img src="Syls3.jpg" alt="Her photo">
+                </div>
+                <div class="character penguin">
+                    <img src="Syls4.jpg" alt="Her photo">
+                </div>
+                <div class="character penguin">
+                    <img src="syls6.jpg" alt="Her photo">
+                </div>
+                <div class="character puppy">
+                    <img src="Syls0.jpg" alt="Her photo">
+                </div>
+            </div>
+
+            <div class="heart">♡</div>
+        </div>
+        <h1 class="hero-title">A little surprise for you...</h1>
+        <p class="subtitle">Two tiny friends have been waiting to celebrate you.</p>
+        <div class="actions">
+            <button class="btn" onclick="showChoice()">
+                Open Your Surprise 🎁
+            </button>
+        </div>
+        </div>
+    </main>
+    <div id="confetti" class="confetti"></div>
+    <script src="script.js"></script>
+
+    <script>
+        function showChoice() {
+            const choice = document.createElement("div");
+
+            choice.className = "choice-popup";
+
+            choice.innerHTML = `
+        <div class="choice-box">
+            <h2>Are you sure? 🎁</h2>
+            <p>Choose wisely...</p>
+
+            <div class="choice-buttons">
+                <a href="birthday.html" class="choice-yes" onclick="burstConfetti(50)">
+                    YES 💖
+                </a>
+
+                <a href="no.html" class="choice-no">
+                    NO 😤
+                </a>
+            </div>
+        </div>
+    `;
+
+            document.body.appendChild(choice);
+        }
+    </script>
+
+</body>
+
+</html>

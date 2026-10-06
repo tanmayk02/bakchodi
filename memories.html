@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="theme-color" content="#cfeeff">
+    <title>Memories & One Last Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+    <div class="stars"><span style="left:8%;top:15%">✦</span><span
+            style="left:88%;top:18%;animation-delay:1s">✧</span><span
+            style="left:15%;top:78%;animation-delay:1.8s">✦</span><span
+            style="left:90%;top:76%;animation-delay:.5s">⋆</span></div>
+    <nav class="topnav"><a href="index.html">🎁 Surprise</a><a href="birthday.html">🎂 Birthday</a><a class="active"
+            href="memories.html">💕 Memories</a></nav>
+    <main class="page">
+        <div class="wrap">
+            <span class="pill">A few little memories</span>
+            <h1 class="hero-title" style="font-size:clamp(2.2rem,5vw,4rem)">Our little memory book</h1>
+            <p class="subtitle">Tap each card. There may be something hiding on the other side.</p>
+            <div class="memories" id="memoryGrid"></div>
+            <div class="card question">
+                <h2>Ready for one more surprise?</h2>
+                <div class="actions"><button class="btn" onclick="showFinal()">YES ❤️</button><button
+                        class="btn secondary" onclick="showFinal()">Obviously! 🐧</button></div>
+            </div>
+            <div id="final" class="card final" style="display:none;margin-top:25px"><span class="pill">One last
+                    thing...</span>
+                <div class="characters">
+                    <div class="character puppy">
+                        <div class="tail"></div>
+                        <div class="body"></div>
+                        <div class="paw left"></div>
+                        <div class="paw right"></div>
+                        <div class="ear left"></div>
+                        <div class="ear right"></div>
+                        <div class="head">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                            <div class="muzzle">
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                            </div>
+                            <div class="blush left"></div>
+                            <div class="blush right"></div>
+                        </div>
+                    </div>
+                    <div class="character penguin">
+                        <div class="body">
+                            <div class="belly"></div>
+                        </div>
+                        <div class="wing left"></div>
+                        <div class="wing right"></div>
+                        <div class="foot left"></div>
+                        <div class="foot right"></div>
+                        <div class="head">
+                            <div class="face"></div>
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                            <div class="beak"></div>
+                        </div>
+                    </div>
+                </div>
+                <h1>You're one of the most special people in my life.</h1>
+                <div id="finalName" class="final-name">Happy Birthday, [FRIEND'S NAME]! ❤️</div>
+            </div>
+        </div>
+    </main>
+    <div id="confetti" class="confetti"></div>
+
+    <!-- PHOTO POPUP -->
+    <div class="memory-popup" id="memoryPopup">
+
+        <div class="popup-content">
+
+            <button class="popup-close" id="popupClose">×</button>
+
+            <img id="popupImage" src="" alt="Memory">
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function showFinal() {
+            const f = document.getElementById("final");
+            f.style.display = "block";
+
+            setTimeout(() => {
+                f.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }, 30);
+
+            setTimeout(() => {
+                document.getElementById("finalName").classList.add("reveal");
+                burstConfetti(170);
+            }, 650);
+        }
+    </script>
+</body>
+
+</html>
