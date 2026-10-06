@@ -1245,3 +1245,33 @@ a {
 .thank-you-button:hover {
     transform: scale(1.05);
 }
+
+.thank-you-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.call-button {
+    background: #ff8fb3;
+}
+
+.whatsapp-button {
+    background: #25D366;
+}
+
+.thank-you-button {
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.thank-you-button:hover {
+    transform: scale(1.05);
+}
