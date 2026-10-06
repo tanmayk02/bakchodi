@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#fceeff">
+
+    <title>Oh No...</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            padding: 20px 0;
+
+            font-family: Arial, sans-serif;
+
+            background:
+                radial-gradient(circle at top left, #ffe8f2, transparent 35%),
+                radial-gradient(circle at bottom right, #e8e1ff, transparent 35%),
+                #f8fbff;
+
+            overflow-x: hidden;
+
+            font-family: Arial, sans-serif;
+
+            background:
+                radial-gradient(circle at top left, #ffe8f2, transparent 35%),
+                radial-gradient(circle at bottom right, #e8e1ff, transparent 35%),
+                #f8fbff;
+
+            overflow: hidden;
+        }
+
+        .scene {
+            width: min(1000px, calc(100% - 30px));
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.8);
+
+            padding: clamp(25px, 5vw, 45px) clamp(15px, 4vw, 30px);
+
+            border-radius: clamp(20px, 4vw, 35px);
+
+            box-shadow:
+                0 20px 60px rgba(80, 90, 130, 0.15);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+
+            color: #596783;
+
+            font-size: clamp(32px, 5vw, 55px);
+        }
+
+        .subtitle {
+            color: #7b879f;
+
+            font-size: 18px;
+
+            margin-bottom: 30px;
+        }
+
+        .fight-area {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 25px;
+            overflow: hidden;
+
+            background: white;
+        }
+
+        .fight-area img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            max-width: 100%;
+            max-height: calc(100vh - 320px);
+
+            object-fit: contain;
+
+            border-radius: 25px;
+        }
+
+        @media (max-width: 600px) {
+
+    body {
+        padding: 10px 0;
+    }
+
+    .scene {
+        width: calc(100% - 20px);
+
+        padding: 25px 12px;
+
+        border-radius: 24px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .fight-area {
+        margin-top: 15px;
+        border-radius: 18px;
+    }
+
+    .fight-area img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        border-radius: 18px;
+    }
+
+    .back-button {
+        margin-top: 22px;
+    }
+}
+        /* Tom */
+
+        .tom {
+            position: absolute;
+
+            left: 12%;
+
+            bottom: 35px;
+
+            font-size: 110px;
+
+            animation: tomFight 1s infinite alternate ease-in-out;
+        }
+
+        /* Jerry */
+
+        .jerry {
+            position: absolute;
+
+            right: 14%;
+
+            bottom: 38px;
+
+            font-size: 75px;
+
+            animation: jerryFight 1s infinite alternate ease-in-out;
+        }
+
+        /* Fight symbols */
+
+        .fight-symbol {
+            position: absolute;
+
+            left: 50%;
+
+            top: 42%;
+
+            transform: translate(-50%, -50%);
+
+            font-size: 55px;
+
+            font-weight: bold;
+
+            animation: fightSymbol 0.7s infinite alternate;
+        }
+
+        .dust {
+            position: absolute;
+
+            bottom: 35px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            font-size: 55px;
+
+            opacity: 0.7;
+
+            animation: dustMove 0.8s infinite alternate;
+        }
+
+        @keyframes tomFight {
+
+            from {
+                transform: translateX(0) rotate(-5deg);
+            }
+
+            to {
+                transform: translateX(80px) rotate(8deg);
+            }
+
+        }
+
+        @keyframes jerryFight {
+
+            from {
+                transform: translateX(0) rotate(5deg);
+            }
+
+            to {
+                transform: translateX(-70px) rotate(-8deg);
+            }
+
+        }
+
+        @keyframes fightSymbol {
+
+            from {
+                transform: translate(-50%, -50%) scale(0.8) rotate(-10deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) scale(1.2) rotate(10deg);
+            }
+
+        }
+
+        @keyframes dustMove {
+
+            from {
+                transform: translateX(-50%) scale(0.8);
+            }
+
+            to {
+                transform: translateX(-50%) scale(1.15);
+            }
+
+        }
+
+        .back-button {
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 14px 28px;
+
+            max-width: 90%;
+
+            border-radius: 999px;
+
+            background: linear-gradient(135deg,
+                    #ed9bc4,
+                    #b795df);
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="scene">
+
+        <h1>YOU SAID NO?! 😤</h1>
+
+        <p class="subtitle">
+            Accha, beti..., ruko jara
+        </p>
+
+        <div class="fight-area">
+            <img src="Playful Pillow Fight Showdown.jpg" alt="Tom and Jerry fighting">
+        </div>
+
+        <a href="index.html" class="back-button">
+            Okay, I'll choose again 🎁
+        </a>
+
+    </div>
+
+</body>
+
+</html>
