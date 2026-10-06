@@ -1197,3 +1197,51 @@ a {
 
     z-index: 10;
 }
+
+
+.thank-you-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.thank-you-card {
+    width: min(500px, 90vw);
+    padding: 45px 25px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.thank-you-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.thank-you-card h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.thank-you-card p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.thank-you-button {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 50px;
+    background: #ff8fb3;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.thank-you-button:hover {
+    transform: scale(1.05);
+}
