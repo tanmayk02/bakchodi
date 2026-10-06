@@ -3,14 +3,14 @@ const CONFIG={
   friendName:"[FRIEND'S NAME]",
   giftMessage:"You deserve a day full of cake, laughter, tiny happy moments and lots of love. 💕",
   memories:[
-    {icon:"🌸",front:"A little moment",back:"Memory1.jpg"},
-    {icon:"📸",front:"That one day",back:"Memory2.jpg"},
-    {icon:"🐧",front:"A SYLLY memory",back:"Memory3.jpg"},
-    {icon:"✨",front:"Something special",back:"Memory4.jpg"},
-    {icon:"💗",front:"A favourite memory",back:"Memory5.jpg"},
-    {icon:"🌷",front:"One of those days",back:"Memory6.jpg"},
-    {icon:"🫶",front:"A tiny happy moment",back:"Memory7.jpg"},
-    {icon:"🎀",front:"Just because",back:"Memory8.jpg"}
+    {icon:"🌸",front:"The first photo",back:"Memory1.jpg"},
+    {icon:"📸",front:"That one dinner",back:"Memory3.jpg"},
+    {icon:"🐧",front:"A SYLLY memory",back:"Memory2.jpg"},
+    {icon:"✨",front:"That special friendship",back:"Memory4.jpg"},
+    {icon:"💗",front:"A favourite memory 😜",back:"Memory5.jpg"},
+    {icon:"🌷",front:"Last year's birthday",back:"Memory6.jpg"},
+    {icon:"🫶",front:"A tiny happy moment with special people",back:"Memory7.jpg"},
+    {icon:"🎀",front:"Just because you're qt",back:"Memory8.jpg"}
 ]
 };
 
