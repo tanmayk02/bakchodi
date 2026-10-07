@@ -1,6 +1,6 @@
 
 const CONFIG={
-  friendName:"[FRIEND'S NAME]",
+  friendName:"Sylvia",
   giftMessage:"You deserve a day full of cake, laughter, tiny happy moments and lots of love. 💕",
   memories:[
     {icon:"🌸",front:"The first photo",back:"Memory1.jpg"},
@@ -10,7 +10,9 @@ const CONFIG={
     {icon:"💗",front:"A favourite memory 😜",back:"Memory5.jpg"},
     {icon:"🌷",front:"Last year's birthday",back:"Memory6.jpg"},
     {icon:"🫶",front:"A tiny happy moment with special people",back:"Memory7.jpg"},
-    {icon:"🎀",front:"Just because you're qt",back:"Memory8.jpg"}
+    {icon:"🎀",front:"Just because you're qt",back:"Memory8.jpg"},
+    {icon:"💛💛",front:"Tanmay's favv",back:"Memory9.jpg"},
+    {icon:"🌻",front:"फूल's",back:"Memory10.jpg"}
 ]
 };
 
@@ -56,7 +58,7 @@ function setupMemoryCards(){
         <div class="face front">
           <div class="icon">${m.icon}</div>
           <strong>${m.front}</strong>
-          <small>tap to reveal</small>
+        
         </div>
       </div>
     `;

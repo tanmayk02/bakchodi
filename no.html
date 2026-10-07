@@ -28,10 +28,11 @@
 
             font-family: Arial, sans-serif;
 
-            background:
-                radial-gradient(circle at top left, #ffe8f2, transparent 35%),
-                radial-gradient(circle at bottom right, #e8e1ff, transparent 35%),
-                #f8fbff;
+            background-image: url("memory-bg.jpg");
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
 
             overflow-x: hidden;
 
@@ -284,6 +285,13 @@
         .back-button:hover {
             transform: translateY(-3px);
         }
+        @media (max-width: 600px) {
+    body {
+        background-position: center center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
     </style>
 
 </head>
