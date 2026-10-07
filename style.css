@@ -1276,3 +1276,52 @@ a {
 .thank-you-button:hover {
     transform: scale(1.05);
 }
+
+.birthday-letter {
+    width: min(900px, 90%);
+    margin: 35px auto 10px;
+    text-align: left;
+    color: #4f5d78;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.birthday-letter p {
+    margin: 0 0 24px;
+}
+
+.birthday-letter .letter-greeting {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.birthday-letter .letter-ending {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .birthday-letter {
+        width: 88%;
+        font-size: 16px;
+        line-height: 1.55;
+        margin-top: 25px;
+    }
+
+    .birthday-letter .letter-greeting {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+
+    .birthday-letter .letter-ending {
+        font-size: 20px;
+    }
+
+    .birthday-letter p {
+        margin-bottom: 20px;
+    }
+}
